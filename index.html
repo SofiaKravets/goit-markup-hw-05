@@ -23,7 +23,7 @@
       <nav>
         <ul class="header-list">
           <li class="item list">
-            <a class="header-link link" href="./index.html">Студия</a>
+            <a class="header-link link current" href="./index.html">Студия</a>
           </li>
           <li class="item list">
             <a class="header-link link" href="./portfolio.html">Портфолио</a>
@@ -54,9 +54,19 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-butoon" type="button">Заказать услугу</button>
+        <button class="hero-butoon" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
+  <!--Модалка-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- Секція Benefits -->
     <section class="benefits">
       <div class="container">
@@ -119,12 +129,15 @@
         <ul class="about-list">
           <li class="list about-item-list">
             <img src="./images/img1.jpg" alt="верстка" width="370" />
+            <h3 class="about-item">Десктопные приложения</h3>
           </li>
           <li class="list about-item-list">
             <img src="./images/img2.jpg" alt="дизайн" width="370" />
+            <h3 class="about-item">Мобильные приложения</h3>
           </li>
           <li class="list about-item-list">
             <img src="./images/img3.jpg" alt="внешнее оформление" width="370" />
+            <h3 class="about-item">Дизайнерские решения</h3>
           </li>
         </ul>
       </div>
@@ -398,5 +411,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
     </body>    
     </html>
